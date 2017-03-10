@@ -4,7 +4,7 @@ package sixpi.profesoradjunto.classes;
 import java.util.ArrayList;
 
 /**
- * Created by rceb9 on 10/03/2017. HoLA
+ * Created by rceb9hola on 10/03/2017. CARAPICHA
  */
 
 public class Curso {
