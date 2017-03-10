@@ -4,7 +4,7 @@ package sixpi.profesoradjunto.classes;
 import java.util.ArrayList;
 
 /**
- * Created by rceb9hola on 10/03/2017. CARAPICHA TU MADRE
+ * Created by rceb9hola on 10/03/2017.
  */
 
 public class Curso {
