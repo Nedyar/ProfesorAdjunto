@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sixpi.profesoradjunto.activities.PerfilActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="108dp"
+        android:layout_height="115dp"
+        app:srcCompat="@drawable/perfil"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="69dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="305dp"
+        android:orientation="horizontal"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"></LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

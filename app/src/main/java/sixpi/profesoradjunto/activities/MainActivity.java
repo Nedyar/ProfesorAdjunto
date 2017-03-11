@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity
         tabs.setup();
 
         TabHost.TabSpec spec=tabs.newTabSpec(getResources().getString(R.string.free));
-        spec.setContent(R.id.tab1);
+        spec.setContent(R.id.rab);
         spec.setIndicator(getResources().getString(R.string.free), null);
         tabs.addTab(spec);
 
