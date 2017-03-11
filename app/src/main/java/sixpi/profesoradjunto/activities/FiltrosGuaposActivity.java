@@ -2,6 +2,7 @@ package sixpi.profesoradjunto.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import sixpi.profesoradjunto.R;
 
 public class FiltrosGuaposActivity extends AppCompatActivity {
 

@@ -3,10 +3,6 @@ package sixpi.profesoradjunto.activities;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,6 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TabHost;
+
+import sixpi.profesoradjunto.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -42,16 +40,12 @@ public class MainActivity extends AppCompatActivity
         TabHost tabs=(TabHost)findViewById(android.R.id.tabhost);
         tabs.setup();
 
-        TabHost.TabSpec spec=tabs.newTabSpec("Gratuitos");
+        TabHost.TabSpec spec=tabs.newTabSpec(getResources().getString(R.string.free));
         spec.setContent(R.id.tab1);
-        spec.setIndicator("",
-                res.getDrawable(android.R.drawable.ic_btn_speak_now));
         tabs.addTab(spec);
 
-        spec=tabs.newTabSpec("Mentores");
+        spec=tabs.newTabSpec(getResources().getString(R.string.mentors));
         spec.setContent(R.id.tab2);
-        spec.setIndicator("TAB2",
-                res.getDrawable(android.R.drawable.ic_dialog_map));
         tabs.addTab(spec);
 
         tabs.setCurrentTab(0);

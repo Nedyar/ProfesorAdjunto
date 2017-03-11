@@ -18,10 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activities.FiltrosActivity"
-            android:label="@string/title_activity_filtros" />
-        <activity android:name=".activities.FiltrosActivity" />
         <activity android:name=".activities.FiltrosGuaposActivity"></activity>
     </application>
 
