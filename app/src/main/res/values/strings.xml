@@ -13,6 +13,8 @@
     <string name="share">Compartir</string>
     <string name="contact_us">Contacta con nosotros</string>
     <string name="spread_the_word">Corre la voz</string>
+    <string name="free">Gratuitos</string>
+    <string name="mentors">Mentores</string>
 
     <string name="action_settings">Opciones</string>
 </resources>
