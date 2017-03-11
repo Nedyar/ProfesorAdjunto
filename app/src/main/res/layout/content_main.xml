@@ -42,9 +42,57 @@
                         android:layout_height="match_parent" >
 
                         <TextView android:id="@+id/textView1"
-                            android:text="@string/free"
+                            android:text="Matemáticas I"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:text="José Luis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView10"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView11"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:text="Programación"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView12"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:text="Maria"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView13"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView14"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:text="Historia de la Biología Subatómica Marina"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView15"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:text="Jose Antonio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView16"
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <LinearLayout android:id="@+id/tab2"
@@ -53,9 +101,37 @@
                         android:layout_height="match_parent" >
 
                         <TextView android:id="@+id/textView2"
-                            android:text="@string/mentors"
+                            android:text="Física Teórica"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:text="Dr. Sheldon Cooper"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView17"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView18" />
+
+                        <TextView
+                            android:text="Macroeconomía"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView19"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:text="Sergio Conejero"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView20"
+                            android:textSize="18sp" />
+
                     </LinearLayout>
                 </FrameLayout>
             </LinearLayout>
