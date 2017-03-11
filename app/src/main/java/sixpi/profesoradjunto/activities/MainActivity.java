@@ -10,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TabHost;
-import android.widget.Toast;
 
 import sixpi.profesoradjunto.R;
 
@@ -93,19 +92,18 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
         } else if (id == R.id.nav_create_course) {
             Intent i = new Intent(this, CrearCursoActivity.class );
-            try {
-                startActivity(i);
-            } catch (Exception e) {
-                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
-            }
+            startActivity(i);
         } else if (id == R.id.nav_chats) {
             Intent i = new Intent(this, MainActivity.class );
             startActivity(i);
         } else if (id == R.id.nav_store) {
-            Intent i = new Intent(this, MainActivity.class );
+            Intent i = new Intent(this, TiendaActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_profile) {
             Intent i = new Intent(this, MainActivity.class );
+            startActivity(i);
+        } else if (id == R.id.nav_find) {
+            Intent i = new Intent(this, FiltrosActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_share) {
 
