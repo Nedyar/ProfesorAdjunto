@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sixpi.profesoradjunto.CrearCursoActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="140dp"
+        android:layout_height="46dp"
+        android:text="Descripcion:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <TextView
+        android:id="@+id/textViewDedicado"
+        android:layout_width="137dp"
+        android:layout_height="33dp"
+        android:text="Dedicado a:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="401dp" />
+
+    <TextView
+        android:id="@+id/textViewPrecio"
+        android:layout_width="137dp"
+        android:layout_height="33dp"
+        android:text="Precio:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <EditText
+        android:id="@+id/editTextNombreC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre Curso"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Programacion,Mates..."
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <EditText
+        android:id="@+id/editTextDedicado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Publico"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <EditText
+        android:id="@+id/editTextPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="20€"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="352dp"
+        android:layout_height="118dp"
+        android:ems="10"
+        android:hint="Este curso trata de..."
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Nombre:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteY="29dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:text="Materia:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteY="100dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textViewCategoria"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:text="Categoria:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:id="@+id/textViewNombreC"
+        android:layout_width="107dp"
+        android:layout_height="33dp"
+        android:text="Nombre"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="207dp"
+        android:layout_height="46dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="145dp" />
+</android.support.constraint.ConstraintLayout>
