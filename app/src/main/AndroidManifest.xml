@@ -23,6 +23,10 @@
             android:label="@string/title_activity_filtros" />
         <activity android:name=".activities.FiltrosActivity" />
         <activity android:name=".activities.FiltrosGuaposActivity"></activity>
+        <activity
+            android:name=".activities.CrearCursoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

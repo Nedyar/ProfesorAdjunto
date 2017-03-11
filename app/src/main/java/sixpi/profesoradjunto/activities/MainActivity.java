@@ -1,7 +1,6 @@
 package sixpi.profesoradjunto.activities;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,9 +8,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TabHost;
+import android.widget.Toast;
 
 import sixpi.profesoradjunto.R;
 
@@ -35,13 +34,12 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         //Pestannas
-        Resources res = getResources();
 
         TabHost tabs=(TabHost)findViewById(android.R.id.tabhost);
         tabs.setup();
 
         TabHost.TabSpec spec=tabs.newTabSpec(getResources().getString(R.string.free));
-        spec.setContent(R.id.rab);
+        spec.setContent(R.id.tab1);
         spec.setIndicator(getResources().getString(R.string.free), null);
         tabs.addTab(spec);
 
@@ -63,12 +61,12 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -85,7 +83,6 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -95,8 +92,12 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(this, MainActivity.class );
             startActivity(i);
         } else if (id == R.id.nav_create_course) {
-            Intent i = new Intent(this, MainActivity.class );
-            startActivity(i);
+            Intent i = new Intent(this, CrearCursoActivity.class );
+            try {
+                startActivity(i);
+            } catch (Exception e) {
+                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
         } else if (id == R.id.nav_chats) {
             Intent i = new Intent(this, MainActivity.class );
             startActivity(i);
