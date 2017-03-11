@@ -1,8 +1,11 @@
 package sixpi.profesoradjunto.activities;
 
+import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TabHost;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,6 +35,26 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //Pestannas
+        Resources res = getResources();
+
+        TabHost tabs=(TabHost)findViewById(android.R.id.tabhost);
+        tabs.setup();
+
+        TabHost.TabSpec spec=tabs.newTabSpec("Gratuitos");
+        spec.setContent(R.id.tab1);
+        spec.setIndicator("",
+                res.getDrawable(android.R.drawable.ic_btn_speak_now));
+        tabs.addTab(spec);
+
+        spec=tabs.newTabSpec("Mentores");
+        spec.setContent(R.id.tab2);
+        spec.setIndicator("TAB2",
+                res.getDrawable(android.R.drawable.ic_dialog_map));
+        tabs.addTab(spec);
+
+        tabs.setCurrentTab(0);
     }
 
     @Override
@@ -72,15 +96,20 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_start) {
-            // Handle the camera action
+            Intent i = new Intent(this, MainActivity.class );
+            startActivity(i);
         } else if (id == R.id.nav_create_course) {
-
+            Intent i = new Intent(this, MainActivity.class );
+            startActivity(i);
         } else if (id == R.id.nav_chats) {
-
+            Intent i = new Intent(this, MainActivity.class );
+            startActivity(i);
         } else if (id == R.id.nav_store) {
-
+            Intent i = new Intent(this, MainActivity.class );
+            startActivity(i);
         } else if (id == R.id.nav_profile) {
-
+            Intent i = new Intent(this, MainActivity.class );
+            startActivity(i);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_contact_us) {

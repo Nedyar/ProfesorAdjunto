@@ -5,7 +5,7 @@
         <item
             android:id="@+id/nav_start"
             android:icon="@drawable/inicio"
-            android:title="@string/start" />
+            android:title="@string/start"/>
         <item
             android:id="@+id/nav_create_course"
             android:icon="@drawable/crearcurso"
@@ -34,8 +34,8 @@
 
             <item
                 android:id="@+id/nav_contact_us"
-                android:icon="@drawable/ic_menu_share"
-                android:title="nav_contact_us" />
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/contact_us" />
         </menu>
     </item>
 
