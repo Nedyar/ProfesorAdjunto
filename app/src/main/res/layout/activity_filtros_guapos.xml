@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="sixpi.profesoradjunto.activities.FiltrosGuaposActivity">
 
+    //HOLA
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
