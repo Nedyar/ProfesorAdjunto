@@ -42,10 +42,12 @@ public class MainActivity extends AppCompatActivity
 
         TabHost.TabSpec spec=tabs.newTabSpec(getResources().getString(R.string.free));
         spec.setContent(R.id.tab1);
+        spec.setIndicator(getResources().getString(R.string.free), null);
         tabs.addTab(spec);
 
         spec=tabs.newTabSpec(getResources().getString(R.string.mentors));
         spec.setContent(R.id.tab2);
+        spec.setIndicator(getResources().getString(R.string.mentors), null);
         tabs.addTab(spec);
 
         tabs.setCurrentTab(0);
