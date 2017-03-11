@@ -3,33 +3,39 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_start"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="@string/start" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_create_course"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="@string/create_course" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_chats"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="@string/chats" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_store"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="@string/store" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/profile" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/spread_the_word">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="@string/share" />
+
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_menu_share"
+                android:title="nav_contact_us" />
         </menu>
     </item>
 
