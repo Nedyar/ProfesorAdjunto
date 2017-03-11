@@ -1,4 +1,4 @@
-package sixpi.profesoradjunto;
+package sixpi.profesoradjunto.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

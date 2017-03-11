@@ -1,18 +1,8 @@
 <resources>
     <string name="app_name">Profesor Adjunto</string>
 
-    <string name="navigation_drawer_open">Abrir navigation drawer</string>
-    <string name="navigation_drawer_close">Cerrar navigation drawer</string>
-    <string name="user_name">Nombre</string>
-    <string name="knowledge_points">Puntos de conocimiento: </string>
-    <string name="start">Inicio</string>
-    <string name="create_course">Crear Curso</string>
-    <string name="chats">Chats</string>
-    <string name="store">Tienda</string>
-    <string name="profile">Perfil</string>
-    <string name="share">Compartir</string>
-    <string name="contact_us">Contacta con nosotros</string>
-    <string name="spread_the_word">Corre la voz</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Opciones</string>
+    <string name="action_settings">Settings</string>
 </resources>
