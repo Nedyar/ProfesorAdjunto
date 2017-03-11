@@ -7,15 +7,13 @@ package sixpi.profesoradjunto.classes;
 public class Materia {
 
     private String nombre;
-    private String descripcion;
-    private int nivel;
+    private String categoria;
 
 
-    public Materia(String n, String desc, int dific) {
+    public Materia(String n, String cat) {
 
         nombre = n;
-        descripcion = desc;
-        nivel = dific;
+        categoria = cat;
 
     }
 
@@ -29,26 +27,17 @@ public class Materia {
         nombre = n;
     }
 
-    public String getDescripcion() {
+    public String getCategoria() {
 
-        return descripcion;
+        return categoria;
     }
 
-    public void setDescripcion(String d) {
+    public void setCategoria(String c) {
 
-        descripcion = d;
-
+        categoria = c;
     }
 
-    public int getNivel() {
 
-        return nivel;
-    }
-
-    public void setNivel(int n) {
-        nivel = n;
-
-    }
 
 }
 

@@ -8,22 +8,24 @@ import java.util.ArrayList;
  */
 
 public class Curso {
-
+    private String nombre;
     private Materia materia;
     private Profesor profesor;
     private ArrayList<Usuario> usuarios;
     private double precio;
     private String descripcion;
+    private String destinado;
     private ArrayList<String> etiquetas;
     private int karma;
 
-    public Curso(Materia m, Profesor p, float precio, String descripcion) {
-
+    public Curso(Materia m, Profesor p, float precio, String descripcion, String name, String des) {
+        nombre = name;
         materia = m;
         profesor = p;
         usuarios = new ArrayList<>();
         this.precio = precio;
         this.descripcion = descripcion;
+        destinado = des;
         etiquetas = new ArrayList<>();
 
     }
@@ -31,15 +33,19 @@ public class Curso {
     public Materia getMateria() {
         return materia;
     }
+    public void setMateria(Materia m){materia = m;}
 
-    public void setMateria(Materia m) {
-        materia = m;
-
+    public String getNombre() {
+        return nombre;
     }
+
+    public String getDestinado() {
+        return destinado;
+    }
+
 
     public Profesor getProfesor() {
         return profesor;
-
     }
 
     public void setProfesor(Profesor p) {
